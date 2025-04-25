@@ -1,3 +1,6 @@
+from model import OllamaModel
+from tools import basic_calculator, reverse_string
+from agent import Agent
 # Example usage
 if __name__ == "__main__":
     """
@@ -34,7 +37,7 @@ if __name__ == "__main__":
 
     # Using Ollama with llama2 model
     model_service = OllamaModel
-    model_name = "llama2"  # Can be changed to other models like 'mistral', 'codellama', etc.
+    model_name = "deepseek-r1:8b"  # Can be changed to other models like 'mistral', 'codellama', etc.
     stop = "<|eot_id|>"
 
     agent = Agent(tools=tools, model_service=model_service, model_name=model_name, stop=stop)

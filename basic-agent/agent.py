@@ -1,3 +1,6 @@
+from tool_box import ToolBox
+from model import OllamaModel
+from termcolor import colored
 agent_system_prompt_template = """
 You are an intelligent AI assistant with access to specific tools. Your responses must ALWAYS be in this JSON format:
 {{

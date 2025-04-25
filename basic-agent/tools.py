@@ -21,7 +21,7 @@ def basic_calculator(input_str):
         else:
             # Clean and parse the input string
             input_str_clean = input_str.replace("'", "\"")
-            input_str_clean = input_str_cl...eration](num1, num2)
+            #input_str_clean = input_str_cl...eration(num1, num2)
         
         # Format result based on type
         if isinstance(result, bool):
